@@ -98,6 +98,7 @@ global:
     hipMemcpy2D;
     hipMemcpy2DAsync;
     hipMemcpy2DToArray;
+    cudaMemcpy2DToArray;
     hipMemcpy3D;
     hipMemcpy3DAsync;
     hipDrvMemcpy3D;
@@ -165,6 +166,9 @@ global:
     hipGetDeviceFlags;
     hipSetDevice;
     hipSetDeviceFlags;
+    cudaCreateChannelDesc;
+    cudaCreateTextureObject;
+    cudaMallocArray;
     hipStreamAddCallback;
     hipStreamAttachMemAsync;
     hipStreamCreate;

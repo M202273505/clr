@@ -95,6 +95,7 @@ target_sources(amdhip64 PRIVATE
   hip_activity.cpp
   hip_code_object.cpp
   hip_context.cpp
+  cuda_runtime.cpp
   hip_device_runtime.cpp
   hip_device.cpp
   hip_error.cpp

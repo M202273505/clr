@@ -89,6 +89,9 @@ foreach(binFile ${BIN_FILES})
 endforeach()
 
 install(DIRECTORY ${HIP_COMMON_DIR}/include DESTINATION . COMPONENT dev)
+install(FILES ${hip_SOURCE_DIR}/include/cuda_runtime_api.h
+        ${hip_SOURCE_DIR}/include/cuda_runtime.h
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR} COMPONENT dev)
 install(DIRECTORY ${hip_SOURCE_DIR}/include/hip/amd_detail
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/hip COMPONENT dev)
 if(DEFINED HIPNV_DIR)

@@ -122,6 +122,7 @@ hipMemcpyParam2D
 hipMemcpy2D
 hipMemcpy2DAsync
 hipMemcpy2DToArray
+cudaMemcpy2DToArray
 hipMemcpy2DToArrayAsync
 hipMemcpy3D
 hipMemcpy3DAsync
@@ -192,6 +193,9 @@ hipRuntimeGetVersion
 hipGetDeviceFlags
 hipSetDevice
 hipSetDeviceFlags
+cudaCreateChannelDesc
+cudaCreateTextureObject
+cudaMallocArray
 hipStreamAddCallback
 hipStreamAttachMemAsync
 hipStreamCreate
